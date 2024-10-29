@@ -1,0 +1,201 @@
+@import url('https://fonts.cdnfonts.com/css/the-wild-breath-of-zelda');
+
+:root {
+  --back-color: #05140a;
+  --green-color: #6a83708c;
+  --primary-color: rgb(207, 205, 198);
+  --secondary-color: rgb(21, 21, 21);
+  font-family: 'The Wild Breath of Zelda', sans-serif;
+}
+
+body {
+  background-color: var(--back-color);
+  border-radius: 10px;
+  border: 10px solid var(--back-color);
+  box-sizing: border-box;
+  display: grid;
+  gap: 20px;  
+  grid-template-columns: repeat(3, 1fr);  
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+  word-spacing: 10px;
+
+}
+
+header, main, footer, .tri-force, .link, .zelda, .ganondorf {
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  height: auto;
+  max-height: 100%;
+  transition: transform 0.5s;
+  width: auto;
+}
+header:hover, main:hover, footer:hover, .tri-force:hover, .link:hover, .zelda:hover, .ganondorf:hover {
+transform: scale(1.05);
+}
+
+header {
+  align-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  display: grid;
+  font-size: 24px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  text-shadow: 5px 5px 5px var(--green-color);
+}
+header > h1 {
+  margin: auto;
+  z-index: 3;
+}
+header > p {
+  font-size: 30px;
+  margin: auto;
+  z-index: 4;
+}
+.shield {
+  align-self: center;
+  height: auto;
+  justify-self: center;
+  max-width: 155px;
+  opacity: 0.6;
+  position:absolute;
+  z-index: 0;
+}
+main {
+  align-content: center;
+  align-items: center;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/df18264c-4f85-4bd9-ad2e-5baad591cd6b/db0mqoy-2cc5bd49-3c63-4e35-8949-5af44e72e000.jpg/v1/fill/w_1024,h_741,q_75,strp/loz_redux__hyrule_map_by_deimos_remus_db0mqoy-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzQxIiwicGF0aCI6IlwvZlwvZGYxODI2NGMtNGY4NS00YmQ5LWFkMmUtNWJhYWQ1OTFjZDZiXC9kYjBtcW95LTJjYzViZDQ5LTNjNjMtNGUzNS04OTQ5LTVhZjQ0ZTcyZTAwMC5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.pfSb79uSdUdKbpuu7o5ZLenlYJqbTjj7wm1MHqAXxbc);
+  box-shadow: inset 10px 10px 80px 30px var(--back-color);
+  color: var(--primary-color);
+  display: grid;
+  font-size: 22px;
+  grid-area: 3 / 1 / 4 / 2;
+  justify-content: center;
+  justify-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  text-shadow: 3px 3px 3px var(--back-color);
+}
+
+footer {
+  align-content: center;
+  align-items: center;
+  background-color: var(--green-color);
+  box-shadow: inset 10px 10px 70px 20px var(--back-color);
+  color: var(--primary-color);
+  display: grid;
+  grid-area: 3 / 3 / 4 / 4;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+footer > h3 {
+  font-size: 45px;
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.triforce-button { 
+  align-self: center;
+  cursor: pointer;
+  height: auto;
+  justify-self: center;
+  opacity: 0.7;
+  position: absolute;
+  width: 180px;
+}
+
+
+.tri-force {
+  background-image: url(https://wallpapers.com/images/hd/triforce-6k5nh409s7vlinc0.jpg);
+  grid-area: 2 / 2 / 4 / 3;
+}
+
+.link {
+  background-image: url(https://i.blogs.es/10da3b/screenshot_1737/1366_2000.jpeg);
+  grid-area: 1 / 3 / 3 / 4;
+}
+
+.zelda {
+  background-image: url(https://i0.wp.com/mynintendonews.com/wp-content/uploads/2023/05/princess_zelda_in_tears_of_the_kingdom.jpg?fit=1920%2C1080&ssl=1);
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.ganondorf {
+  background-image: url(https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/04/zelda-ganondorf-3010884.jpg?tf=3840x);
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+
+@media screen and (max-width: 950px) {
+  .shield {
+    height: auto;
+    max-width: 130px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    grid-area: header; 
+  }
+  .shield {
+    height: auto;
+    min-width: 160px;
+  }
+  .tri-force {
+    grid-area: tri-force;
+  }
+  .link {
+    grid-area: link;
+  }
+  main {
+    grid-area: main;
+  }
+  .zelda {
+    grid-area: zelda;
+  }
+  .ganondorf {
+    grid-area: ganondorf;
+  }
+  footer {
+    font-size: 14px;
+    grid-area: footer;
+  }
+  footer > h3 {
+    padding-left: 35px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .triforce-button {
+    height: auto;
+    width: 30%;
+  }
+
+  body {
+      height: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(10, 200px);
+      grid-template-areas: 
+                        "header"
+                        "tri-force"
+                        "tri-force"
+                        "link"
+                        "link"
+                        "main"
+                        "zelda"
+                        "ganondorf"
+                        "ganondorf"
+                        "footer";
+  }
+}
